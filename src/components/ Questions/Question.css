@@ -1,0 +1,90 @@
+.question{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 40px;
+}
+.question h2{
+    font-size: 30px;
+}
+.oneQuestion{
+    width: 50%;
+    min-height: 350px;
+    background-color: #fff;
+    margin: 10px auto 40px auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    padding: 20px;
+    border-radius: 20px;
+}
+.oneOption{
+    width: 70%;
+    padding: 15px 20px;
+    margin:10px;
+    border-radius: 30px;
+    background-color: rgb(224, 215, 215);
+    cursor: pointer;
+    border: none;
+    font-size: 20px;
+    min-height: 50px;
+}
+.selected{
+    background-color: rgb( 2,207, 0);
+    color: #fff;
+    border: none;
+}
+.wrong{
+    background-color: rgb( 233,0, 0);
+    color: #fff;
+    border: none;
+}
+.controles button{
+    margin: 10px ;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+.button1{
+    background-color: rgb(3, 3, 158);
+    color: #fff;
+}
+.button2{
+    background-color: rgb(156, 5, 68);
+    color: #fff;
+}
+
+.eror{
+    background-color:red;
+    color: #fff;
+    padding: 10px;
+}
+
+
+/*----------media----------*/
+@media(max-width:768px){
+    .oneOption{
+        width: 80%;
+    }
+    .oneQuestion{
+        width: 70%;
+    }
+}
+@media(max-width:548px){
+    .oneOption{
+        width: 100%;
+    }
+    .oneQuestion{
+        width: 90%;
+    }
+    .question h2{
+        font-size: 25px;
+    }
+    .oneOption{
+        font-size: 16px;
+    }
+}
